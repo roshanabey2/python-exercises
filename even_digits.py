@@ -12,8 +12,7 @@
 
 #even_digits(10, 30) -> 20,22,24,26,28
 #even_digits(1, 100) -> 2,4,6,8,20,22,24,26,28,40,42,44,46,48,60,62,64,66,68,80,82,84,86,88
-#even_digits(200, 400) -> 200,202,204,206,208,220,222,224,226,228,240,242,244,246,248,2
-
+#even_digits(200, 400) -> 200,202,204,206,208,220,222,224,226,228,240,242,244,246,248,262,264,266,268,280,282,284,286,288
 
 def even_digits(lower, upper):
     super_even = []
@@ -30,10 +29,4 @@ def even_digits(lower, upper):
                     break
                 else:
                     continue
-    return ", ".join(super_even)
-
-
-lower = int(input("Enter lower bound: "))
-upper = int(input("enter upper bound: "))
-
-print(even_digits(lower, upper))
+    return ",".join(super_even)
